@@ -1,0 +1,102 @@
+.navbarComp {
+    // position: relative;
+    // background-color: white;
+    z-index: 10000;
+
+    #navMenu {
+        cursor: pointer;
+        display: none;
+    }
+
+    @media only screen and (max-width: 900px) {
+        #navMenu {
+            display: block;
+        }
+
+
+
+        .navlist {
+            margin-top: 50px;
+            position: absolute;
+            // background-color: white;
+            // z-index: -1;
+            // background-color: red;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            padding: 50px 20px;
+            display: flex;
+            transform: translateX(-100vh);
+
+
+            li {
+                display: flex;
+
+                width: 100%;
+
+                a {
+                    // background-color: gray;
+                    width: 100%;
+                    padding: 20px 20px;
+                    display: flex;
+                    transform: translateX(-20px);
+
+
+                    &:hover {
+                        background: rgb(29, 78, 216);
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .navlist-active {
+            transform: translateX(0)
+        }
+
+        ;
+    }
+
+
+    #navMenu>span {
+        display: block;
+        width: 28px;
+        height: 2px;
+        border-radius: 9999px;
+        background-color: rgb(29, 78, 216);
+    }
+
+    #navMenu>span:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    #navMenu,
+    #navMenu>span {
+        transition: all 0.4s ease-in-out;
+    }
+
+    #navMenu.active {
+        transition-delay: 0.8s;
+        transform: rotate(45deg);
+    }
+
+    #navMenu.active>span:nth-child(2) {
+        width: 0;
+    }
+
+    #navMenu.active>span:nth-child(1),
+    #navMenu.active>span:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+
+    #navMenu.active>span:nth-child(1) {
+        transform: translateY(9px);
+    }
+
+    #navMenu.active>span:nth-child(3) {
+        transform: translateY(-9px) rotate(90deg);
+    }
+
+
+}
