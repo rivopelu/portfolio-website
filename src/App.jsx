@@ -6,9 +6,9 @@ import './style/App.scss';
 
 function App() {
   return (
-    <div className="App min-h-screen bg-white ">
+    <div className="App min-h-screen bg-[#F5F5F5] ">
       <NavbarComp />
-      <div className='pt-[60px] lg:pt-16'>
+      <div className='pt-[60px] lg:pt-16 pb-9'>
 
         <MainRoute />
       </div>

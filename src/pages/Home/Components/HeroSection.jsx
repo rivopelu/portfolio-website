@@ -11,9 +11,16 @@ const HeroSection = () => {
                 <h1 className='text-blue-700 text-5xl lg:text-6xl font-bold'>Hello !</h1>
                 <p className='text-2xl lg:text-3xl'>I’m Rivo, a front end developer.</p>
                 <p className='text-xl text-gray-500'>What separates design from art is that design is meant to be… functional.</p>
-                <div className='bg-blue-700 w-fit px-6 py-1 text-white flex items-center gap-3 mt-2 cursor-pointer hover:-translate-y-1 duration-200 hover:bg-blue-900'>
-                    <div>About Me</div>
-                    <FontAwesomeIcon icon={faArrowDown} className='flex animate-bounce' />
+                <div className='flex items-center gap-5'>
+
+                    <a href='#about' className='bg-blue-700 w-fit px-6 py-1 text-white flex items-center gap-3 mt-2 cursor-pointer hover:-translate-y-1 duration-200 hover:bg-blue-900'>
+                        <div>About Me</div>
+                        <FontAwesomeIcon icon={faArrowDown} className='flex animate-bounce' />
+                    </a>
+                    <a href='#project' className='bg-blue-700 w-fit px-6 py-1 text-white flex items-center gap-3 mt-2 cursor-pointer hover:-translate-y-1 duration-200 hover:bg-blue-900'>
+                        <div>My Project</div>
+                        <FontAwesomeIcon icon={faArrowDown} className='flex animate-bounce' />
+                    </a>
                 </div>
             </div>
         </div>

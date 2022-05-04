@@ -3,6 +3,13 @@
     // background-color: white;
     z-index: 10000;
 
+    ul {
+
+        .active {
+            color: rgb(29, 78, 216);
+        }
+    }
+
     #navMenu {
         cursor: pointer;
         display: none;
@@ -56,6 +63,8 @@
         }
 
         ;
+
+
     }
 
 

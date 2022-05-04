@@ -12,13 +12,12 @@ const NavbarComp = () => {
 
     const dataLink = [
         { title: 'Home', link: '/' },
-        { title: 'About', link: '#about' },
-        { title: 'Project', link: '#project' },
-        { title: 'Contact', link: '#contact' },
+        { title: 'Project', link: '/project' },
+        { title: 'Contact', link: '/contact' },
     ]
 
     return (
-        <nav className='py-4 lg:py-60=  navbarComp fixed w-full bg-white'>
+        <nav className='py-4 lg:py-60=  navbarComp fixed w-full bg-[#F5F5F5]'>
             <div className='containerMain flex justify-between '>
 
                 <NavLink className={'flex gap-2 items-center'} to={'/'}>
@@ -31,15 +30,17 @@ const NavbarComp = () => {
                     <span></span>
                 </div>
 
-                <ul className={`bg-white navlist flex flex-col items-center lg:flex-row lg:gap-6 duration-200 ${klikMenu ? '' : 'navlist-active '}`}>
+                <ul className={`bg-[#F5F5F5] navlist flex flex-col items-center lg:flex-row lg:gap-6 duration-200 ${klikMenu ? '' : 'navlist-active '}`}>
                     {
                         dataLink.map((item) => (
 
-                            <li><NavLink className={'font-bold  duration-200'} to={item.link} >{item.title}</NavLink></li>
+                            <li><NavLink activeClassName='active' className={'font-bold  duration-200'} to={item.link} >{item.title}</NavLink></li>
                         ))
                     }
 
                 </ul>
+
+
             </div>
         </nav >
     )
