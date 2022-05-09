@@ -9,7 +9,7 @@ const HomePage = () => {
         <section className="containerMain h-full HomePage ">
             <HeroSection />
 
-            <div className="garis-batas-homepage">
+            <div className="garis-batas-homepage mb-20">
 
             </div>
             <AboutPage />
