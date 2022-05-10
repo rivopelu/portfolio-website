@@ -84,10 +84,7 @@ const ProjectHomeSection = () => {
 
 
 
-                <div className=''>
-
-
-                    {/* Manado Sampah*/}
+                {/* <div className=''>
                     <div className="cinemasSection flex flex-col lg:flex-row  lg:items-center lg:justify-between border-b-3 ">
                         <div className="kiri lg:w-[60%]   border-r-4 mr-5">
 
@@ -118,8 +115,8 @@ const ProjectHomeSection = () => {
 
                         </div>
                     </div>
-                </div>
-
+                </div> */}
+                <div></div>
             </div>
 
         </div>
